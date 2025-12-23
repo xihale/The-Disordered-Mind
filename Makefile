@@ -13,7 +13,7 @@ PDF_FLAGS = --pdf-engine=xelatex \
             -V mainfont="$(FONT)" \
             -V CJKmainfont="$(FONT)" \
             -V geometry:margin=1in \
-            -V header-includes="\usepackage{graphicx} \setkeys{Gin}{width=0.9\textwidth,height=0.8\textheight,keepaspectratio}"
+            -V header-includes="\usepackage{graphicx} \usepackage{tikz} \let\oldmaketitle\maketitle \renewcommand{\maketitle}{\begin{titlepage}\begin{tikzpicture}[remember picture,overlay] \node[inner sep=0pt] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{cover.jpg}}; \end{tikzpicture}\end{titlepage}\clearpage\oldmaketitle} \setkeys{Gin}{width=0.9\textwidth,height=0.8\textheight,keepaspectratio}"
 
 .PHONY: all pdf html clean epub init
 

@@ -1,7 +1,8 @@
 ---
 title: "我们时代的神经与精神疾病"
-author: "(美) Eric Kandel"
-translator: "喻柏雅"
+author: 
+  - "(美) Eric Kandel 著"
+  - "喻柏雅 译"
 publisher: "北京联合出版公司"
 producer: "后浪"
 original_title: "The Disordered Mind: What Unusual Brains Tell Us About Ourselves"
